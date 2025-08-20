@@ -7,6 +7,8 @@ export class AppController {
 
   @Get()
   getHello(): string {
+    console.log('Variable de entorno db:', process.env.DATABASE_NAME);
+
     return this.appService.getHello();
   }
 }
