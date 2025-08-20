@@ -1,6 +1,9 @@
 export class CreateItemDto {
-  name: string;
+  id: string;
+  nombre: string;
+  codigo: string;
   description?: string;
-  price: number;
-  isActive?: boolean;
+  precio: number;
+  cantidad: number;
+  disponible: boolean;
 }

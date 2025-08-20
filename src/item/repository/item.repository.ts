@@ -14,7 +14,6 @@ export class ItemRepository {
 
   async crearItem(dto: CreateItemDto): Promise<Item> {
     const item = this.itemRepository.create(dto);
-    console.log('Item a crear', item);
     return this.itemRepository.save(item);
   }
 

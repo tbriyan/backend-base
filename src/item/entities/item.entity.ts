@@ -6,14 +6,20 @@ export class Item {
   id: string;
 
   @Column({ length: 100 })
-  name: string;
+  nombre: string;
+
+  @Column({ length: 100 })
+  codigo: string;
 
   @Column('text', { nullable: true })
   description?: string;
 
   @Column('decimal', { default: 0 })
-  price: number;
+  precio: number;
+
+  @Column('integer', { default: 0 })
+  cantidad: number;
 
   @Column({ default: true })
-  isActive: boolean;
+  disponible: boolean;
 }
